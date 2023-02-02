@@ -107,9 +107,9 @@
                 optDec = false,
                 leadingCount = 0,
                 abbr = '',
-                trillion = locale.trillion || 1000000000000,
-                billion = locale.billion ||  1000000000,
-                million = locale.million ||  1000000,
+                trillion = locales[numeral.options.currentLocale].hasOwnProperty('trillion')?locale.trillion:1000000000000,
+                billion = locales[numeral.options.currentLocale].hasOwnProperty('billion')?locale.billion:1000000000,
+                million = locales[numeral.options.currentLocale].hasOwnProperty('million')?locale.million:1000000,
                 thousand = 1000,
                 decimal = '',
                 neg = false,
@@ -264,7 +264,7 @@
         stringToNumber: function(string) {
             var locale = locales[options.currentLocale],
                 stringOriginal = string,
-                abbreviations = locale.abbreviations_detail || {
+                abbreviations = locale.hasOwnProperty('abbreviations_detail') ? locale.abbreviations_detail : {
                     thousand: 3,
                     million: 6,
                     billion: 9,
@@ -690,7 +690,7 @@
         }
     });
 
-    
+
 
 (function() {
         numeral.register('format', 'bps', {
