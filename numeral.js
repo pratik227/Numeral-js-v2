@@ -107,9 +107,9 @@
                 optDec = false,
                 leadingCount = 0,
                 abbr = '',
-                trillion = 1000000000000,
-                billion = 1000000000,
-                million = 1000000,
+                trillion = locale.trillion || 1000000000000,
+                billion = locale.billion ||  1000000000,
+                million = locale.million ||  1000000,
                 thousand = 1000,
                 decimal = '',
                 neg = false,
@@ -238,7 +238,8 @@
             }
 
             if (thousands > -1) {
-                int = int.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + locale.delimiters.thousands);
+                int = int.toString().replace(locale.regex || /(\d)(?=(\d{3})+(?!\d))/g, '$1' + locale.delimiters.thousands);
+                // int = int.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + locale.delimiters.thousands);
             }
 
             if (format.indexOf('.') === 0) {
@@ -263,7 +264,7 @@
         stringToNumber: function(string) {
             var locale = locales[options.currentLocale],
                 stringOriginal = string,
-                abbreviations = {
+                abbreviations = locale.abbreviations_detail || {
                     thousand: 3,
                     million: 6,
                     billion: 9,

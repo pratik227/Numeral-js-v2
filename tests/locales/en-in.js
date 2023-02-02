@@ -32,7 +32,7 @@
             trillion: 9
         },
         ordinal: function (number) {
-            let b = number % 10;
+            var b = number % 10;
             return (~~(number % 100 / 10) === 1) ? 'th' :
                 (b === 1) ? 'st' :
                     (b === 2) ? 'nd' :
