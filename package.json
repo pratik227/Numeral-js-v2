@@ -1,12 +1,10 @@
 {
-  "name": "numeral",
-  "version": "2.0.6",
+  "name": "numeral-v2",
+  "version": "0.0.1",
   "description": "Format and manipulate numbers.",
-  "homepage": "http://numeraljs.com",
   "author": {
-    "name": "Adam Draper",
-    "email": "adamwdraper@gmail.com",
-    "url": "http://github.com/adamwdraper"
+    "name": "Pratik Patel",
+    "url": "https://github.com/pratik227"
   },
   "keywords": [
     "numeral",
@@ -22,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adamwdraper/Numeral-js"
+    "url": "https://github.com/pratik227/Numeral-js"
   },
   "bugs": {
-    "url": "https://github.com/adamwdraper/Numeral-js/issues"
+    "url": "https://github.com/pratik227/Numeral-js/issues"
   },
   "license": "MIT",
   "devDependencies": {
@@ -53,7 +51,5 @@
   "scripts": {
     "test": "grunt"
   },
-  "ender": "./ender.js",
-  "_id": "numeral@1.5.4",
-  "_from": "numeral"
+  "ender": "./ender.js"
 }

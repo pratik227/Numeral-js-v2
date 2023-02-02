@@ -1,6 +1,5 @@
 // numeral.js locale configuration
 // locale : Ukrainian for the Ukraine (uk-ua)
-// author : Michael Piefel : https://github.com/piefel (with help from Tetyana Kuzmenko)
 
 (function (global, factory) {
     if (typeof define === 'function' && define.amd) {

@@ -1,6 +1,5 @@
 // numeral.js locale configuration
 // locale : German in Switzerland (de-ch)
-// author : Michael Piefel : https://github.com/piefel (based on work from Marco Krage : https://github.com/sinky)
 
 (function (global, factory) {
     if (typeof define === 'function' && define.amd) {

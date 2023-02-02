@@ -1,5 +1,5 @@
 // numeral.js locale configuration
-// locale : German in Switzerland (de-ch)
+// locale : Romanian
 
 (function (global, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -10,22 +10,22 @@
         factory(global.numeral);
     }
 }(this, function (numeral) {
-    numeral.register('locale', 'de-ch', {
+    numeral.register('locale', 'ro', {
         delimiters: {
-            thousands: ' ',
+            thousands: '.',
             decimal: ','
         },
-        abbreviations: {
-            thousand: 'k',
-            million: 'm',
-            billion: 'b',
-            trillion: 't'
+        abbreviations: { // I found these here http://www.unicode.org/cldr/charts/28/verify/numbers/ro.html
+            thousand: 'K',
+            million: 'mil',
+            billion: 'mld',
+            trillion: 'tril'
         },
         ordinal: function (number) {
             return '.';
         },
         currency: {
-            symbol: 'CHF'
+            symbol: 'L'
         }
     });
 }));
