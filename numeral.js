@@ -690,7 +690,7 @@
         }
     });
 
-
+    
 
 (function() {
         numeral.register('format', 'bps', {

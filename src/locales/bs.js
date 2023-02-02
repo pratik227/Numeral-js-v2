@@ -10,7 +10,7 @@
         factory(global.numeral);
     }
 }(this, function (numeral) {
-    numeral.register('locale', 'hr', {
+    numeral.register('locale', 'bs', {
         delimiters: {
             thousands: '.',
             decimal: ','

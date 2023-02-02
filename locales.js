@@ -46,7 +46,7 @@
 
 
 (function() {
-        numeral.register('locale', 'hr', {
+        numeral.register('locale', 'bs', {
         delimiters: {
             thousands: '.',
             decimal: ','
