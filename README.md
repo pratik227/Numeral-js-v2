@@ -7,7 +7,7 @@ A javascript library for formatting and manipulating numbers.
 
 # Acknowledgement
 
-This Repository is forked from Numeral.js
+This Repository is forked from Numeral.js.
 
 # Contributing
 
