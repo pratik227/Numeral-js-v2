@@ -236,7 +236,7 @@
             thousands: ',',
             decimal: '.'
         },
-        trillion: 1000000000,
+        trillion: 999999999999999,
         billion: 10000000,
         million: 100000,
         regex: /(\d)(?=(\d\d)+\d$)/g,
