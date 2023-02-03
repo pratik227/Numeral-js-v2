@@ -21,8 +21,8 @@
         regex: /(\d)(?=(\d\d)+\d$)/g,
         abbreviations: {
             thousand: 'k',
-            million: 'l',
-            billion: 'cr',
+            million: 'L',
+            billion: 'Cr',
             trillion: 'a'
         },
         abbreviations_detail: {
