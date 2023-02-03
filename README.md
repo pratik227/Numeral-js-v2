@@ -44,3 +44,76 @@ See [the english unit tests](https://github.com/pratik227/Numeral-js/blob/master
 
 Added abbreviations for thousands and millions using 'a' in the format
 
+
+# New parameters Added to the register functions
+
+# 1. Now you can pass the abbreviations numbers that will be user in numeral
+
+## Example
+
+```js
+
+numeral.register('locale', 'in', {
+        delimiters: {
+            thousands: ',',
+            decimal: '.'
+        },
+        trillion: 1000000000,
+        billion: 10000000,
+        million: 100000
+})
+```
+
+# 2. You can also Pass the regex that will be used to split the numbers.
+
+## Example for Indian Country
+
+```js
+
+numeral.register('locale', 'in', {
+        delimiters: {
+            thousands: ',',
+            decimal: '.'
+        },
+        trillion: 1000000000,
+        billion: 10000000,
+        million: 100000,
+        regex: /(\d)(?=(\d\d)+\d$)/g,
+})
+
+```
+
+    Input - numeral(1290704).format("0,00") 
+    Output - 12,90,704
+
+# 3. You can also pass the abbreviations_detail that will be used in stringToNumber
+
+## Example 
+
+```js
+
+numeral.register('locale', 'in', {
+        delimiters: {
+            thousands: ',',
+            decimal: '.'
+        },
+        trillion: 1000000000,
+        billion: 10000000,
+        million: 100000,
+        regex: /(\d)(?=(\d\d)+\d$)/g,
+        abbreviations: {
+            thousand: 'k',
+            million: 'l',
+            billion: 'cr',
+            trillion: 'a'
+        },
+        abbreviations_detail: {
+            thousand: 2,
+            million: 5,
+            billion: 7,
+            trillion: 9
+        }
+})
+
+```
+
