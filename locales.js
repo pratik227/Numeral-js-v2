@@ -250,7 +250,7 @@
             thousand: 2,
             million: 5,
             billion: 7,
-            trillion: 9
+            trillion: 25
         },
         ordinal: function (number) {
             var b = number % 10;
