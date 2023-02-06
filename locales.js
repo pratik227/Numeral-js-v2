@@ -236,21 +236,21 @@
             thousands: ',',
             decimal: '.'
         },
-        trillion: 999999999999999,
-        billion: 10000000,
+        trillion: 10000000,
+        billion: 999999999999999,
         million: 100000,
         regex: /(\d)(?=(\d\d)+\d$)/g,
         abbreviations: {
             thousand: 'k',
             million: 'L',
-            billion: 'Cr',
-            trillion: 'a'
+            billion: 'a',
+            trillion: 'Cr'
         },
         abbreviations_detail: {
             thousand: 2,
             million: 5,
-            billion: 7,
-            trillion: 25
+            billion: 25,
+            trillion: 7
         },
         ordinal: function (number) {
             var b = number % 10;
